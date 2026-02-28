@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const successMessage = document.getElementById('success-message');
 
     // IMPORTANT: Paste your copied Google Script URL here inside the quotes
-    const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw4J8t5pbz9HKttgkUK283P4F7mPMkS0qD_LGtAqc1pNomzI1NqQDGseXDy3XbTpRT7/exec';
 
     orderForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         formData.append('tier', finalPrice); // Adding the price to our Google Sheet data
 
         // If the URL is still the placeholder, just simulate success (for testing)
-        if (scriptURL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
+        if (scriptURL === 'https://script.google.com/macros/s/AKfycbw4J8t5pbz9HKttgkUK283P4F7mPMkS0qD_LGtAqc1pNomzI1NqQDGseXDy3XbTpRT7/exec') {
             setTimeout(() => {
                 orderForm.style.display = 'none';
                 successMessage.classList.remove('hidden');
@@ -194,3 +194,4 @@ function scrollToCheckout() {
         }, 1500);
     }, 800);
 }
+
