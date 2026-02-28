@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الساعة الذكية الرياضية Pro - راحة وتتبع متكامل</title>
+    <!-- Google Fonts (Tajawal for premium Arabic typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Animated Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Limited Time Offer Banner -->
+    <div class="top-banner">
+        <span><i class="fa-solid fa-clock fa-spin"></i> عرض حصري: الجيل الجديد من أجهزة التدليك بخصم 40% اليوم
+            فقط!</span>
+        <div class="countdown" id="countdown">02:15:30</div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge-premium"><i class="fa-solid fa-certificate fa-beat"></i> المنتج الأكثر مبيعاً في
+                    المغرب</div>
+                <h1>راقب صحتك ولياقتك مع <strong>الساعة الذكية Pro!</strong></h1>
+                <p>ساعة رياضية متطورة بشاشة لمس كاملة تتبع نبضات القلب، جودة النوم، والنشاط اليومي بدقة عالية. تصميم
+                    أنيق يناسب كل الأوقات.</p>
+
+                <div class="hero-features">
+                    <span><i class="fa-solid fa-check text-green"></i> الدفع عند الاستلام</span>
+                    <span><i class="fa-solid fa-check text-green"></i> توصيل سريع لجميع المدن</span>
+                    <span><i class="fa-solid fa-check text-green"></i> ضمان الجودة</span>
+                </div>
+
+                <!-- Urgency & Stock Bar -->
+                <div class="stock-urgency">
+                    <div class="stock-text">
+                        <span><i class="fa-solid fa-fire text-red"></i> سارع بالطلب!</span>
+                        <span>باقي <strong class="stock-count">14</strong> قطعة فقط في المخزن</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- CTA Button like YouCan -->
+                <button class="btn-primary cta-scroll bounce-animation" onclick="scrollToCheckout()">
+                    <i class="fa-solid fa-cart-shopping"></i> اطلب الآن (الدفع عند الاستلام)
+                </button>
+
+                <!-- Trust underneath CTA -->
+                <p class="hero-trust-text"><i class="fa-solid fa-shield-check text-green"></i> ضمان استرجاع الأموال لمدة
+                    14 يوماً</p>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="images/product_smartwatch_1772152863080.png" alt="الساعة الذكية الرياضية Pro"
+                    class="hero-image floating-animation">
+                <!-- Floating elements for visual effect -->
+                <div class="floating-badge badge-1"><i class="fa-solid fa-heart-pulse fa-beat-fade"></i> قياس النبض
+                </div>
+                <div class="floating-badge badge-2"><i class="fa-solid fa-shoe-prints"></i> تتبع الخطوات</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">لماذا تحتاج إلى هذا الجهاز؟</h2>
+            <div class="features-grid">
+
+                <div class="feature-card delay-1">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-fire-flame-curved fa-beat-fade"></i>
+                    </div>
+                    <h3>تدفئة مدمجة ذكية</h3>
+                    <p>يعمل بتقنية التدفئة اللطيفة (42 درجة مئوية) لتنشيط الدورة الدموية وتخفيف تشنجات العضلات.</p>
+                </div>
+
+                <div class="feature-card delay-2">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-bolt fa-shake"></i>
+                    </div>
+                    <h3>نبضات TENS العميقة</h3>
+                    <p>ترددات كهربائية منخفضة تحاكي التدليك اليدوي بأيدي خبراء لفك العقد العضلية.</p>
+                </div>
+
+                <div class="feature-card delay-3">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-feather fa-bounce"></i>
+                    </div>
+                    <h3>تصميم مريح وخفيف</h3>
+                    <p>شكل حرف U مرن يتكيف مع حجم العنق بوزن خفيف جداً، يمكنك ارتداؤه في العمل أو السفر.</p>
+                </div>
+
+                <div class="feature-card delay-4">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-volume-xmark fa-fade"></i>
+                    </div>
+                    <h3>صامت تماماً</h3>
+                    <p>استمتع بجلسة استرخاء هادئة بدون أي ضجيج مزعج لراحة ذهنية كاملة.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle / Story Section -->
+    <section class="lifestyle-section">
+        <div class="container lifestyle-container">
+            <div class="lifestyle-image-col">
+                <img src="images/massager_lifestyle_1772144204079.png" alt="شخص يستخدم جهاز التدليك باسترخاء"
+                    class="lifestyle-img rounded-shadow">
+            </div>
+            <div class="lifestyle-content-col">
+                <h2>استرجع نشاطك وحيويتك</h2>
+                <p>الجلوس لفترات طويلة أمام الكمبيوتر أو الهاتف يسبب تصلباً في الرقبة والكتفين. مع جهازنا الذكي، يمكنك
+                    تحويل أي وقت فراغ إلى جلسة استجمام وحيوية.</p>
+                <ul class="benefit-list">
+                    <li><i class="fa-solid fa-heart-circle-check text-red"></i> يحسن جودة النوم</li>
+                    <li><i class="fa-solid fa-brain text-blue"></i> يقلل من التوتر والصداع</li>
+                    <li><i class="fa-solid fa-person-walking text-green"></i> يسهل الحركة ويقضي على التصلب</li>
+                </ul>
+                <img src="images/massager_features_1772144236515.png" alt="ميزات جهاز التدليك"
+                    class="lifestyle-img-small rounded-shadow" style="margin-top: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">ماذا يقول عملاؤنا؟ <span class="stars">★★★★★</span> (4.9/5)</h2>
+            <div class="reviews-grid">
+
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="avatar">س</div>
+                            <div>
+                                <h4>سعيد م. - الدار البيضاء</h4>
+                                <div class="review-stars text-primary">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> مشترٍ مؤكد</div>
+                    </div>
+                    <p class="review-text">"كنت أعاني من ألم دائم في رقبتي بسبب الجلوس الطويل في المكتب. هذا الجهاز غير
+                        حياتي! التدفئة مريحة جداً والنبضات تفكك العضلات المتشنجة فوراً. أنصح به بشدة."</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="avatar">ف</div>
+                            <div>
+                                <h4>فاطمة الزهراء ع. - طنجة</h4>
+                                <div class="review-stars text-primary">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> مشترٍ مؤكد</div>
+                    </div>
+                    <p class="review-text">"وصلني في يومين، التغليف رائع وممتاز كهدية. اشتريت العرض المزدوج لي ولزوجي
+                        وكلانا نستخدمه يومياً قبل النوم لأنه يساعد على الاسترخاء بشكل مذهل."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="avatar bg-alt">ك</div>
+                            <div>
+                                <h4>كريم ب. - مراكش</h4>
+                                <div class="review-stars text-primary">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="verified-badge"><i class="fa-solid fa-circle-check"></i> مشترٍ مؤكد</div>
+                    </div>
+                    <p class="review-text">"منتج ممتاز وعملي جداً، خفيف الوزن لدرجة أنني أنسى أنني أرتديه. البطارية تدوم
+                        لفترة طويلة."</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-wrapper">
+
+                <div class="faq-item">
+                    <h4 class="faq-question">هل هو مناسب لجميع أحجام الرقبة؟ <i class="fa-solid fa-chevron-down"></i>
+                    </h4>
+                    <div class="faq-answer">
+                        <p>نعم، الجهاز مصمم من مواد مرنة (سيليكون طبي) على شكل حرف U، مما يسمح له بالتكيف والتمدد ليناسب
+                            جميع الأحجام براحة تامة.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="faq-question">متى سأتوصل بالمنتج وكيف يتم الدفع؟ <i class="fa-solid fa-chevron-down"></i>
+                    </h4>
+                    <div class="faq-answer">
+                        <p>التوصيل يتم خلال 24 إلى 48 ساعة في جميع مدن المغرب. الدفع يكون نقداً عند الاستلام (كاش) بعد
+                            التأكد من منتجك.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <h4 class="faq-question">هل الجهاز يتوفر على ضمان؟ <i class="fa-solid fa-chevron-down"></i></h4>
+                    <div class="faq-answer">
+                        <p>بالتأكيد! نوفر ضمان استبدال مجاني في حالة وجود أي عيب مصنعي في الجهاز.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout / Order Section -->
+    <section class="checkout-section" id="checkout-section">
+        <div class="container">
+            <div class="checkout-wrapper">
+
+                <div class="order-summary">
+                    <h2>اختر العرض المناسب لك</h2>
+                    <p class="subtitle">كلما اشتريت أكثر، وفرت أكثر!</p>
+
+                    <div class="pricing-options">
+                        <!-- Option 1 -->
+                        <label class="pricing-card" for="tier-1">
+                            <input type="radio" name="pricing-tier" id="tier-1" value="1" data-price="299" checked>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="tier-title">ساعة واحدة <span class="badge-saving">الأكثر
+                                            طلباً</span></span>
+                                    <div class="price">
+                                        <span class="old-price">600 درهم</span>
+                                        <span class="new-price">349 درهم</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- Option 2 -->
+                        <label class="pricing-card highlight" for="tier-2">
+                            <div class="best-value-badge">أفضل قيمة</div>
+                            <input type="radio" name="pricing-tier" id="tier-2" value="2" data-price="499">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <span class="tier-title">ساعتين (عرض الزوجين)</span>
+                                    <div class="price">
+                                        <span class="old-price">1200 درهم</span>
+                                        <span class="new-price">599 درهم</span>
+                                    </div>
+                                </div>
+                                <div class="saving-text"><i class="fa-solid fa-gift"></i> وفر 601 درهم!</div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="trust-badges">
+                        <div class="badge"><i class="fa-solid fa-truck-fast"></i> التوصيل بالمجان</div>
+                        <div class="badge"><i class="fa-solid fa-hand-holding-dollar"></i> الدفع عند الاستلام</div>
+                        <div class="badge"><i class="fa-solid fa-shield-halved"></i> ضمان الاستبدال</div>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="checkout-form-panel">
+                    <h2>معلومات التوصيل</h2>
+                    <p class="form-instruction">الرجاء إدخال معلوماتك لتأكيد الطلب وسيتم الاتصال بك في غضون 24 ساعة.</p>
+
+                    <form id="orderForm" class="cod-form">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" id="fullName" name="fullName" placeholder="مثال: أحمد محمد" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="مثال: 0612345678" required
+                                    dir="ltr" style="text-align: right;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">المدينة <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-city"></i>
+                                <input type="text" id="city" name="city" placeholder="مدينة الإقامة" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">العنوان الكامل <span class="required">*</span></label>
+                            <div class="input-with-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <textarea id="address" name="address" rows="2"
+                                    placeholder="الرجاء كتابة العنوان بالتفصيل..." required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="total-bar">
+                            <span>المجموع الكلي:</span>
+                            <span id="final-price" class="final-price-value">349 درهم</span>
+                        </div>
+
+                        <button type="submit" class="btn-submit pulse-animation">
+                            <i class="fa-solid fa-paper-plane"></i> تأكيد الطلب الآن
+                        </button>
+                    </form>
+
+                    <div id="success-message" class="success-message hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>تم استلام طلبك بنجاح!</h3>
+                        <p>سنتصل بك قريباً لتأكيد تفاصيل الشحن.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- floating CTA -->
+    <div class="floating-cta" id="floating-cta">
+        <button class="btn-primary" onclick="scrollToCheckout()">
+            <i class="fa-solid fa-cart-arrow-down"></i> اطلب الآن - الدفع عند الاستلام
+        </button>
+    </div>
+
+    <!-- Store Catalog / Related Products Section -->
+    <section class="store-catalog">
+        <div class="container">
+            <h2 class="section-title">تصفح منتجاتنا الأخرى المميزة</h2>
+            <div class="catalog-grid">
+
+                <!-- Product 1 (Neck Massager - Current) -->
+                <a href="index.html" class="product-card">
+                    <div class="product-img-wrapper">
+                        <div class="product-badge-overlay">الأكثر مبيعاً</div>
+                        <!-- Use hero image filename dynamically -->
+                        <img src="images/massager_hero_1772144185412.png" alt="جهاز تدليك الرقبة">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">جهاز تدليك الرقبة الذكي</h3>
+                        <div class="product-price-row">
+                            <span class="product-price-new">299 درهم</span>
+                            <span class="product-price-old">450 درهم</span>
+                        </div>
+                        <div class="btn-view-product">تصفح المنتج</div>
+                    </div>
+                </a>
+
+                <!-- Product 2 (Smartwatch) -->
+                <a href="smartwatch.html" class="product-card">
+                    <div class="product-img-wrapper">
+                        <div class="product-badge-overlay" style="background:var(--secondary)">جديد</div>
+                        <img src="images/product_smartwatch_1772152863080.png" alt="ساعة ذكية رياضية">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">الساعة الذكية الرياضية Pro</h3>
+                        <div class="product-price-row">
+                            <span class="product-price-new">349 درهم</span>
+                            <span class="product-price-old">600 درهم</span>
+                        </div>
+                        <div class="btn-view-product">تصفح المنتج</div>
+                    </div>
+                </a>
+
+                <!-- Product 3 (Earbuds) -->
+                <a href="earbuds.html" class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product_earbuds_1772152879830.png" alt="سماعات لاسلكية">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">سماعات لاسلكية عازلة للضوضاء</h3>
+                        <div class="product-price-row">
+                            <span class="product-price-new">249 درهم</span>
+                            <span class="product-price-old">399 درهم</span>
+                        </div>
+                        <div class="btn-view-product">تصفح المنتج</div>
+                    </div>
+                </a>
+
+                <!-- Product 4 (Posture Corrector) -->
+                <a href="posture.html" class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product_posture_1772152897021.png" alt="مصحح وضعية الظهر">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">مصحح وضعية الظهر الذكي</h3>
+                        <div class="product-price-row">
+                            <span class="product-price-new">199 درهم</span>
+                            <span class="product-price-old">350 درهم</span>
+                        </div>
+                        <div class="btn-view-product">تصفح المنتج</div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fake Sales Popup Notification -->
+    <div class="sales-popup" id="sales-popup">
+        <img src="images/massager_features_1772144236515.png" alt="Product Thumbnail" class="popup-img">
+        <div class="popup-content">
+            <p class="popup-name" id="popup-name">أحمد من الدار البيضاء</p>
+            <p class="popup-action">اشترى <strong id="popup-item">عرض الزوجين</strong></p>
+            <p class="popup-time" id="popup-time">منذ 5 دقائق</p>
+        </div>
+        <div class="popup-verified">
+            <i class="fa-solid fa-check-circle text-green font-xl"></i>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>جميع الحقوق محفوظة &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
